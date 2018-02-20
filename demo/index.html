@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>MyIP Demo</title>
+        <style>
+        body {
+            padding: 40px;
+        }
+        
+        p {
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+            font-size: 24px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        </style>
+        <script src="../src/myip.js"></script>
+    </head>
+    <body>
+        <p><strong>IPv4 address is:</strong> <span id="ipv4"></span></p>
+        <p><strong>IPv6 address is:</strong> <span id="ipv6"></span></p>
+        <script>
+        
+        myIP.lookup(function(response) {
+            var el4 = document.getElementById('ipv4');
+            
+            if (el4) {
+                el4.innerText = response.ipv4 || '';
+            }
+            
+            var el6 = document.getElementById('ipv6');
+            
+            if (el6) {
+                el6.innerText = response.ipv6 || '';
+            }
+        });
+        
+        </script>
+    </body>
+</html>

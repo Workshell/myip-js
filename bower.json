@@ -1,0 +1,24 @@
+{
+  "name": "myip-js",
+  "authors": [
+    "Workshell Ltd"
+  ],
+  "description": "A client library for the MyIP web service.",
+  "main": "src/myip.min.js",
+  "keywords": [
+    "ip",
+    "myip",
+    "ipaddress",
+    "network",
+    "workshell"
+  ],
+  "license": "BSD",
+  "homepage": "https://github.com/Workshell/myip-js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
